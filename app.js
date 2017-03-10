@@ -45,7 +45,7 @@ app.get('/categories', function(req, res){
 
   	res.status(200);
   	res.setHeader('Content-Type', 'application/json');
-    res.send(JSON.stringify(Categories));
+    res.send(JSON.stringify({ res: Categories }));
 
 });
 
@@ -53,8 +53,8 @@ app.get('/wallpapers', function(req, res){
 
   	res.status(200);
   	res.setHeader('Content-Type', 'application/json');
-    res.send(JSON.stringify(Wallpapers));
-    
+    res.send(JSON.stringify({ res: Wallpapers }));
+
 });
 
 var server = app.listen(process.env.PORT || 8081, function(){
