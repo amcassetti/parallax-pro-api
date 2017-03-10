@@ -42,12 +42,19 @@ var Wallpapers = [
 
 
 app.get('/categories', function(req, res){
-  	res.status(200).send(Categories);
+
+  	res.status(200);
+  	res.setHeader('Content-Type', 'application/json');
+    res.send(JSON.stringify(Categories));
+
 });
 
 app.get('/wallpapers', function(req, res){
 
-  	res.status(200).send(Wallpapers);
+  	res.status(200);
+  	res.setHeader('Content-Type', 'application/json');
+    res.send(JSON.stringify(Wallpapers));
+    
 });
 
 var server = app.listen(process.env.PORT || 8081, function(){
