@@ -14,29 +14,33 @@ var Wallpapers = [
 		id: 'ci1',
 		category: 'ci',
 		name: '',
-		image_url: CDN+'/images/ps/rgba/ci1rgba.jpg',
-		depth_url: CDN+'/images/ps/rgba/ci1z.jpg'
+		thumb_url: CDN+'/images/ps/thumb/ci1thumb.jpg',
+		rgba_url: CDN+'/images/ps/rgba/ci1rgba.jpg',
+		depth_url: CDN+'/images/ps/z/ci1z.jpg'
 	},
 	{
 		id: 'ci2',
 		category: 'ci',
 		name: '',
-		image_url: CDN+'/images/ps/rgba/ci2rgba.jpg',
-		depth_url: CDN+'/images/ps/rgba/ci2z.jpg'
+		thumb_url: CDN+'/images/ps/thumb/ci2thumb.jpg',
+		rgba_url: CDN+'/images/ps/rgba/ci2rgba.jpg',
+		depth_url: CDN+'/images/ps/z/ci2z.jpg'
 	},
 	{
 		id: 'ci3',
 		category: 'ci',
 		name: '',
-		image_url: CDN+'/images/ps/rgba/ci3rgba.jpg',
-		depth_url: CDN+'/images/ps/rgba/ci3z.jpg'
+		thumb_url: CDN+'/images/ps/thumb/ci3thumb.jpg',
+		rgba_url: CDN+'/images/ps/rgba/ci3rgba.jpg',
+		depth_url: CDN+'/images/ps/z/ci3z.jpg'
 	},
 	{
 		id: 'ci4',
 		category: 'ci',
 		name: '',
-		image_url: CDN+'/images/ps/rgba/ci4rgba.jpg',
-		depth_url: CDN+'/images/ps/rgba/ci4z.jpg'
+		thumb_url: CDN+'/images/ps/thumb/ci4thumb.jpg',
+		rgba_url: CDN+'/images/ps/rgba/ci4rgba.jpg',
+		depth_url: CDN+'/images/ps/z/ci4z.jpg'
 	}
 ];
 
