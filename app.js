@@ -156,11 +156,18 @@ app.get('/categories/:id', function(req, res){
     res.send(JSON.stringify({ res: catWalls }));
 });
 
-app.get('/wallpapers', function(req, res){
+app.get('/wallpapers/popular', function(req, res){
 
   	res.status(200);
   	res.setHeader('Content-Type', 'application/json');
     res.send(JSON.stringify({ res: Wallpapers }));
+});
+
+app.get('/wallpapers/new', function(req, res){
+
+  	res.status(200);
+  	res.setHeader('Content-Type', 'application/json');
+    res.send(JSON.stringify({ res: Wallpapers.reverse() }));
 });
 
 var server = app.listen(process.env.PORT || 8081, function(){
